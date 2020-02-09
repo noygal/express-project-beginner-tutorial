@@ -59,3 +59,44 @@ Step by step beginner tutorial for express project.
   We have multiple ways to approach this problem, we went with [Parcel](https://parceljs.org/getting_started.html) - a simple zero config bundler, the more common (and complex) solution is webpack.
 
   See `package.json` for added scripts.
+
+## ESLint - more than a linter #step-4
+
+  [ESLint](https://eslint.org/docs/user-guide/getting-started) is highly recommend on every JavaScript project we will add it to our project as a development dependency.
+
+  ```bash
+  npm install eslint --save-dev
+  ```
+
+- ### Server side linting
+
+  ```bash
+  cd src/server/
+  npx eslint --init
+  ##### Those are the answers given in this tutorial
+  # ? How would you like to use ESLint? To check syntax, find problems, and enforce code style
+  # ? What type of modules does your project use? CommonJS (require/exports)
+  # ? Which framework does your project use? None of these
+  # ? Does your project use TypeScript? No
+  # ? Where does your code run? Node
+  # ? How would you like to define a style for your project? Use a popular style guide
+  # ? Which style guide do you want to follow? Standard: https://github.com/standard/standard
+  # ? What format do you want your config file to be in? JavaScript
+  ```
+  
+- ### Client side linting
+
+  ```bash
+  cd src/client/
+  npx eslint --init
+  ##### Those are the answers given in this tutorial
+  # ? How would you like to use ESLint? To check syntax, find problems, and enforce code style
+  # ? What type of modules does your project use? JavaScript modules (import/export)
+  # ? Which framework does your project use? React
+  # ? Does your project use TypeScript? No
+  # ? Where does your code run? Browser
+  # ? How would you like to define a style for your project? Use a popular style guide
+  # ? Which style guide do you want to follow? Standard: https://github.com/standard/standard
+  # ? What format do you want your config file to be in? JavaScript
+  ```
+  
