@@ -41,3 +41,21 @@ Step by step beginner tutorial for express project.
 - ### Adding sever with health check
 
  See: `src/server/server.js`
+
+## Setting client project #step-3
+
+- ### Client dependencies
+
+  ```bash
+  npm i react react-dom parcel-bundler
+  ```
+
+- ### Creating hello world react app
+
+ See: `src/client` folder.
+
+- ### Bundle client application
+
+  We have multiple ways to approach this problem, we went with [Parcel](https://parceljs.org/getting_started.html) - a simple zero config bundler, the more common (and complex) solution is webpack.
+
+  See `package.json` for added scripts.

@@ -4,6 +4,10 @@
   "description": "Step by step beginner tutorial for express project.",
   "main": "src/server/server.js",
   "scripts": {
+    "build:client:dev": "NODE_ENV=development parcel build ./resources/index.html --no-minify",
+    "build:client": "parcel build ./resources/index.html",
+    "clean:client": "rm -rf .cache dist",
+    "watch:client": "parcel watch ./resources/index.html",
     "start": "node src/server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,6 +23,9 @@
   },
   "homepage": "https://github.com/noygal/express-project-beginner-tutorial#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "parcel-bundler": "^1.12.4",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   }
 }

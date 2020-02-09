@@ -2,7 +2,7 @@ const express = require('express')
 
 const configurations = {
   server: {
-    staticPath: process.env.STATIC_PATH || '../../dist',
+    staticPath: process.env.STATIC_PATH || require('path').join(__dirname, '../../dist/'),
     port: process.env.PORT || 3000,
     healthCheckEndpoints: ['/health-check', '/hc']
   },
