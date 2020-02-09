@@ -1,0 +1,20 @@
+{
+  "name": "express-project-beginner-tutorial",
+  "version": "1.0.0",
+  "description": "Step by step beginner tutorial for express project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noygal/express-project-beginner-tutorial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noygal/express-project-beginner-tutorial/issues"
+  },
+  "homepage": "https://github.com/noygal/express-project-beginner-tutorial#readme"
+}
