@@ -2,8 +2,9 @@
   "name": "express-project-beginner-tutorial",
   "version": "1.0.0",
   "description": "Step by step beginner tutorial for express project.",
-  "main": "index.js",
+  "main": "src/server/server.js",
   "scripts": {
+    "start": "node src/server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/noygal/express-project-beginner-tutorial/issues"
   },
-  "homepage": "https://github.com/noygal/express-project-beginner-tutorial#readme"
+  "homepage": "https://github.com/noygal/express-project-beginner-tutorial#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

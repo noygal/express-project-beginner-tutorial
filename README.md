@@ -29,3 +29,15 @@ Step by step beginner tutorial for express project.
   npm init
   # or 'npm init -y' for skipping interactive init (replay yes to all)
   ```
+
+## Setting express server #step-2
+
+- ### Installing dependencies
+
+  ```bash
+  npm i express
+  ```
+
+- ### Adding sever with health check
+
+ See: `src/server/server.js`
