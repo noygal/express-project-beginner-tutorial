@@ -99,4 +99,16 @@ Step by step beginner tutorial for express project.
   # ? Which style guide do you want to follow? Standard: https://github.com/standard/standard
   # ? What format do you want your config file to be in? JavaScript
   ```
+
+## Testing #step-5
+
+- ### Dependencies
+
+  ```bash
+  npm install faucet tape node-fetch --save-dev
+  ```
+
+- ### Code changes
+
+  Exporting server for closing the http listener on test end.
   

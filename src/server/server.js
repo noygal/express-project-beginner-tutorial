@@ -10,8 +10,8 @@ const configurations = {
 }
 
 const create = async (config) => {
-  const { server, logger } = config
-  const { healthCheckEndpoints, staticPath, port } = server
+  const { logger } = config
+  const { healthCheckEndpoints, staticPath, port } = config.server
   logger.info('Starting Server...')
   const app = express()
 
@@ -22,9 +22,9 @@ const create = async (config) => {
   app.use(express.static(staticPath))
 
   logger.info(`Starting listening on port: ${port}`)
-  await app.listen(port)
+  const server = app.listen(port, () => logger.info(`Serving on: http://localhost:${port}`))
 
-  logger.info(`Serving on: http://localhost:${port}`)
+  return server
 }
 
-create(configurations)
+module.exports = create(configurations)
