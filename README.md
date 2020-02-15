@@ -127,3 +127,13 @@ Step by step beginner tutorial for express project.
 - ### Get tasks list
 
 - ### Create task
+
+## RESTFul API - continue #step-8
+
+- ### Router params
+
+- ### Get task
+
+- ### Update task
+
+- ### Delete task
