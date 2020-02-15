@@ -5,15 +5,16 @@
   "main": "src/server/server.js",
   "scripts": {
     "build:client:dev": "NODE_ENV=development parcel build ./resources/index.html --no-minify",
-    "build:client": "parcel build ./resources/index.html",
+    "build:client": "npm run clean:client && parcel build ./resources/index.html",
     "clean:client": "rm -rf .cache dist",
     "watch:client": "parcel watch ./resources/index.html",
     "lint:client": "eslint src/client",
     "lint:server": "eslint src/server",
+    "watch:server": "nodemon -w src/server src/server/server.js",
     "lint": "npm run lint:server && npm run lint:client",
-    "start": "node src/server/server.js",
+    "start": "npm run build:client && NODE_ENV=production node src/server/server.js",
     "test:server": "tape src/server/**/*.test.js | faucet",
-    "test": "npm run lint:client && npm run lint:server && npm run test:server"
+    "test": "npm run lint && npm run test:server"
   },
   "repository": {
     "type": "git",
@@ -42,6 +43,7 @@
     "eslint-plugin-standard": "^4.0.1",
     "faucet": "0.0.1",
     "node-fetch": "^2.6.0",
+    "nodemon": "^2.0.2",
     "tape": "^4.13.0"
   }
 }

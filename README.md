@@ -102,7 +102,7 @@ Step by step beginner tutorial for express project.
 
 ## Testing #step-5
 
-- ### Dependencies
+- ### Testing dependencies
 
   ```bash
   npm install faucet tape node-fetch --save-dev
@@ -111,4 +111,13 @@ Step by step beginner tutorial for express project.
 - ### Code changes
 
   Exporting server for closing the http listener on test end.
+
+## Nodemon #step-6
+
+[nodemon](https://github.com/remy/nodemon) is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected.
   
+- ### Nodemon dependencies
+
+  ```bash
+  npm install nodemon --save-dev
+  ```
