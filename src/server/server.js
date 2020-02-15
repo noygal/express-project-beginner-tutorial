@@ -15,8 +15,14 @@ const create = async (config) => {
   logger.info('Starting Server...')
   const app = express()
 
+  logger.info('Mounting json body parser')
+  app.use(express.json())
+
   logger.info(`Mounting health check endpoints on: ${healthCheckEndpoints}`)
   app.get(healthCheckEndpoints, (req, res) => res.json({ status: 'OK', error: false }))
+
+  logger.info('Mounting RESTFul tasks route')
+  app.use('/tasks', require('./router/tasks'))
 
   logger.info(`Mounting static middleware at: ${staticPath}`)
   app.use(express.static(staticPath))

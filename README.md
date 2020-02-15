@@ -121,3 +121,9 @@ Step by step beginner tutorial for express project.
   ```bash
   npm install nodemon --save-dev
   ```
+
+## RESTFul API #step-7
+
+- ### Get tasks list
+
+- ### Create task
