@@ -29,7 +29,10 @@
   "homepage": "https://github.com/noygal/express-project-beginner-tutorial#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "express-session": "^1.17.0",
     "parcel-bundler": "^1.12.4",
+    "passport": "^0.4.1",
+    "passport-github": "^1.1.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },

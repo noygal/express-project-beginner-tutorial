@@ -137,3 +137,26 @@ Step by step beginner tutorial for express project.
 - ### Update task
 
 - ### Delete task
+
+## Authentication #step-8
+
+- ### Passport.js dependencies
+
+  We will use [Passport.js](http://www.passportjs.org/) for using `github` as authentication provider.
+
+  ```bash
+  npm install passport passport-github express-session
+  ```
+
+- ### Environment variable
+
+  ```bash
+  # For running with authentication
+  GITHUB_CLIENT_ID=<your-client-id> GITHUB_CLIENT_SECRET=<your-client-secret> npm run watch:server
+  ```
+
+  To create you client id/secret pair follow this [guide](https://developer.github.com/apps/building-oauth-apps/creating-an-oauth-app/) to create `github` oauth app, you will find the id/secret on the app page.
+
+  NOTE: it is highly advise never to never commit secrets to your repository.
+
+- ### Added session storage
